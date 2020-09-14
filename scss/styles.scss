@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+// VARIABLES
+:root {
+  --StrongCyan: hsl(171, 66%, 44%);
+  --LightBlue: hsl(233, 100%, 69%);
+  --DarkGrayishBlue: hsl(210, 10%, 33%);
+  --GrayishBlue: hsl(201, 11%, 66%);
+}
+
+// GLOBALS
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  background: url('../images/bg-header-mobile.png') no-repeat center top;
+
+  @media screen and (min-width: 376px) {
+    background: url('../images/bg-header-desktop.png') no-repeat center top;
+  }
+
+  main {
+    max-width: 310px;
+    margin: auto;
+    overflow: hidden;
+
+    @media screen and (min-width: 376px) {
+      max-width: 1440px;
+    }
+  }
+
+  h1 {
+    font-family: 'Bai Jamjuree';
+    font-weight: 600;
+    color: var(--DarkGrayishBlue);
+  }
+
+  p {
+    color: var(--GrayishBlue);
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  // BUTTONS
+  button {
+    width: 311px;
+    height: 56px;
+    border-radius: 28px;
+    font-family: 'Bai Jamjuree';
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #979797;
+    margin-top: 24px;
+    @media screen and (min-width: 376px) {
+      width: 227px;
+    }
+
+    &.cyan {
+      background: var(--StrongCyan);
+      box-shadow: 0 10px 20px 0 rgba(137, 229, 199, 0.5),
+        inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &.lightblue {
+      background: var(--LightBlue);
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1),
+        inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+    }
+    &:hover {
+      opacity: 75%;
+    }
+  }
+}
+
+// ----------------- HEADER -----------------
+.header {
+  max-width: 310px;
+  margin: auto;
+  margin-bottom: 140px;
+
+  @media screen and (min-width: 376px) {
+    max-width: 730px;
+  }
+
+  img {
+    margin: 123px 0 52px 0;
+  }
+
+  h1 {
+    font-size: 32px;
+    letter-spacing: -0.52px;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 376px) {
+      font-size: 46px;
+      letter-spacing: -0.75px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    letter-spacing: 0.12px;
+    line-height: 26px;
+    max-width: 315px;
+    margin: auto;
+
+    @media screen and (min-width: 376px) {
+      max-width: 1440px;
+      font-size: 20px;
+      letter-spacing: 0.15px;
+      line-height: 30px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+// ----------------- FEATURE -----------------
+.feature {
+  max-width: 310px;
+  margin: auto;
+
+  @media screen and (min-width: 376px) {
+    max-width: 730px;
+  }
+
+  h1 {
+    font-size: 28px;
+    letter-spacing: -0.46px;
+    margin-bottom: 11px;
+
+    @media screen and (min-width: 376px) {
+      font-size: 36px;
+      letter-spacing: -0.59px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    letter-spacing: 0.12px;
+    line-height: 26px;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 376px) {
+      font-size: 18px;
+      letter-spacing: 0.14px;
+      line-height: 30px;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+// ----------------- HIGHLIGHTS -----------------
+.highlight-box {
+  margin-bottom: 146px;
+
+  @media screen and (min-width: 376px) {
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    right: 144px;
+  }
+
+  img {
+    margin: 65px 0 56px 0;
+  }
+  .highlight-text {
+    @media screen and (min-width: 376px) {
+      max-width: 350px;
+      text-align: left;
+    }
+    h1 {
+      font-size: 24px;
+      letter-spacing: -0.39px;
+      margin: 0 auto;
+      @media screen and (min-width: 376px) {
+        font-size: 24px;
+        letter-spacing: -0.39px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      letter-spacing: 0.12px;
+      line-height: 26px;
+      margin-bottom: 38px;
+
+      @media screen and (min-width: 376px) {
+        font-size: 16px;
+        letter-spacing: 0.12px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+// ----------------- MAIN IMAGE -----------------
+.main-image {
+  margin: 64px 0 100px 0;
+}
+
+// ----------------- SUB-FEATURES -----------------
+.sub-feature-box {
+  margin: 90px auto 131px auto;
+  max-width: 1110px;
+  @media screen and (min-width: 376px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .sub-feature {
+    @media screen and (min-width: 376px) {
+      width: 350px;
+    }
+    img {
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 24px;
+      letter-spacing: -0.39px;
+      margin-bottom: 0px;
+    }
+
+    p {
+      font-size: 16px;
+      letter-spacing: 0.12px;
+      line-height: 26px;
+      margin-bottom: 56px;
+    }
+  }
+}
+
+// ----------------- VENDOR BLOCK -----------------
+.vendor-block {
+  margin: 0 auto 170px auto;
+  max-width: 1210px;
+  @media screen and (min-width: 376px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  img {
+    display: block;
+    margin: auto;
+    margin-bottom: 67px;
+
+    &.google {
+      width: 118px;
+      @media screen and (min-width: 376px) {
+        width: 165px;
+      }
+    }
+    &.ibm {
+      width: 121px;
+      @media screen and (min-width: 376px) {
+        width: 144px;
+      }
+    }
+    &.microsoft {
+      width: 125px;
+      @media screen and (min-width: 376px) {
+        width: 160px;
+      }
+    }
+    &.hp {
+      width: 113px;
+      @media screen and (min-width: 376px) {
+        width: 134px;
+      }
+    }
+    &.vector {
+      width: 105px;
+      @media screen and (min-width: 376px) {
+        width: 125px;
+      }
+    }
+  }
+}
+
+// ----------------- FOOTER -----------------
+footer {
+  margin-top: 180px;
+  background: rgba(128, 171, 178, 0.1);
+  .flex-container {
+    max-width: 1340px;
+    margin: auto;
+    @media screen and (min-width: 376px) {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: left;
+      height: 150px;
+    }
+  }
+
+  img {
+    display: block;
+    width: 55px;
+    margin: auto;
+    padding-top: 52px;
+    padding-bottom: 40px;
+    @media screen and (min-width: 376px) {
+      margin: 0;
+      padding: 25px 0;
+    }
+  }
+  a {
+    display: block;
+    font-size: 18px;
+    color: var(--DarkGrayishBlue);
+    letter-spacing: 0.14px;
+    line-height: 30px;
+    margin: 20px 0;
+    text-decoration: none;
+    &:hover {
+      color: var(--StrongCyan);
+    }
+  }
+  .socials {
+    svg {
+      margin: 20px 20px 50px 20px;
+      path:hover {
+        fill: var(--StrongCyan);
+      }
+      @media screen and (min-width: 376px) {
+        margin: 55px 12px;
+      }
+    }
+  }
+}
+
+// ----------------- ATTRIBUTION -----------------
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
